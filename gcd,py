@@ -1,0 +1,11 @@
+#program to calculate greatest common denominator of two no. using euclid's algorithm
+
+a=int(input("Enter 1st number="))
+b=int(input("Enter 2nd number="))
+while(a!=b):
+    if(a>b):
+        a -=b
+    else:
+        b -=a
+
+print("GCD=",a)
